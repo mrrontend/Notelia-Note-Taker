@@ -4,6 +4,22 @@ var btnSaveEl = document.getElementById('btn-save');
 var btnDeleteEl = document.getElementById('btn-delete');
 var listEl = document.getElementById('listed');
 
+// adding dexie.js 
+import Dexie from 'dexie'
+
+var db = new Dexie("noteliaNotes");
+
+// create a version of the database
+
+db.versions(1).stores({
+	data: '++id, note' // create the db tables
+});
+
+// create an array to fetch the data in the db
+
+const notes = db.data.toArray();
+
+
 var noteCount = 0;
 var activeNote = null;
 
