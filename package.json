@@ -1,0 +1,28 @@
+{
+  "name": "notelia-note-taker",
+  "version": "1.0.0",
+  "description": "A note taking app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosiasAurel/Notelia-Note-Taker.git"
+  },
+  "keywords": [
+    "Note",
+    "taking",
+    "save"
+  ],
+  "author": "Josias Aurel & Suresh Mishra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JosiasAurel/Notelia-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/JosiasAurel/Notelia-Note-Taker#readme",
+  "dependencies": {
+    "dexie": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
